@@ -36,8 +36,8 @@ public class Main {
             System.out.println("Коробки равны");
         }else System.out.println("Коробки не равны");
         box1.shift(box2);
-        System.out.println(box1.toString());
-        System.out.println(box2.toString());
+        System.out.println(box1);
+        System.out.println(box2);
 
     }
     /*
@@ -49,7 +49,7 @@ public class Main {
         T temp = list.get(i);
         list.set(i, list.get(j));
         list.set(j, temp);
-        System.out.println(list.toString());
+        System.out.println(list);
     }
     /*
     Задача 3:
@@ -60,7 +60,7 @@ public class Main {
      */
     public static<F extends Fruit> Box<F> fillBox(F fruit, int count, float weight){
         Box<F>box = new Box<>(fruit, count);
-        System.out.println(box.toString());
+        System.out.println(box);
         box.setWeight(weight);
         System.out.println("Вес: "+box.getWeight());
         return box;
